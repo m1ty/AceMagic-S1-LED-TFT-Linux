@@ -1,0 +1,96 @@
+{
+   "orientation": "landscape",
+   "refresh": "update",
+   "screens": [
+      {
+         "id": 1,
+         "name": "Clock",
+         "background": "#06080f",
+         "wallpaper": "themes/clock/bg.png",
+         "duration": 0,
+         "led_config": {
+            "theme": 2,
+            "intensity": 2,
+            "speed": 2
+         },
+         "widgets": [
+            {
+               "id": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": -31,
+                  "width": 320,
+                  "height": 152
+               },
+               "sensor": true,
+               "value": "clock_ru",
+               "format": "{0}",
+               "refresh": 1000,
+               "debug_frame": false,
+               "font": "bold 122px Oswald",
+               "color": "#f4f7ff",
+               "align": "center"
+            },
+            {
+               "id": 2,
+               "name": "text",
+               "rect": {
+                  "x": 55,
+                  "y": 132,
+                  "width": 210,
+                  "height": 34
+               },
+               "sensor": true,
+               "value": "clock_ru",
+               "format": "{9}",
+               "refresh": 1000,
+               "debug_frame": false,
+               "font": "20px Oswald",
+               "color": "#8fb0ff",
+               "align": "center"
+            },
+            {
+               "id": 3,
+               "name": "text_alert",
+               "rect": {
+                  "x": 10,
+                  "y": 139,
+                  "width": 46,
+                  "height": 24
+               },
+               "sensor": true,
+               "value": "cpu_temp",
+               "format": "{0}°{2}",
+               "refresh": 1000,
+               "debug_frame": false,
+               "font": "bold 12px Oswald",
+               "color": "#6079b0",
+               "align": "left",
+               "warn": 70,
+               "warn_color": "#ff9f43",
+               "crit": 85,
+               "crit_color": "#ff4d4d"
+            },
+            {
+               "id": 4,
+               "name": "text",
+               "rect": {
+                  "x": 264,
+                  "y": 139,
+                  "width": 46,
+                  "height": 24
+               },
+               "sensor": true,
+               "value": "cpu_power",
+               "format": "{0} W",
+               "refresh": 1000,
+               "debug_frame": false,
+               "font": "bold 12px Oswald",
+               "color": "#6079b0",
+               "align": "right"
+            }
+         ]
+      }
+   ]
+}
